@@ -1,0 +1,36 @@
+.primary-heading {
+  color: $color-black;
+  text-transform: uppercase;
+}
+.name {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  /* letter-spacing: 0.1rem; */
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  /* animation-delay: 2s; */
+  animation-timing-function: ease-in;
+  backface-visibility: hidden;
+}
+.text {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  text-align: 0.1rem;
+  animation-name: moveRight;
+  animation-duration: 2s;
+  /* animation-delay: 2s; */
+  animation-timing-function: ease-in;
+  backface-visibility: hidden;
+}
+
+.text-box {
+  position: absolute;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
