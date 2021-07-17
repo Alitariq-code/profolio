@@ -1,7 +1,13 @@
+@import "base/base";
+@import "base/animation";
+@import "base/typography";
+@import "base/utilites";
+
 $color-primary: #5e5acea9;
 $color-light: #b5b3e6a8;
 $color-dark: #322cd1c7;
 $color-black: rgb(0, 0, 0);
+$color-background: #fff;
 * {
   margin: 0px;
   padding: 0px;
@@ -128,8 +134,8 @@ body {
 }
 
 .btn-white {
-  background-color: #fff;
-  color: #000000a9;
+  background-color: $color-background;
+  color: $color-black;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -146,7 +152,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 0.5rem 1rem rgb(0, 0, 0);
+  box-shadow: 0 0.5rem 1rem $color-black;
 }
 
 .btn:active {
@@ -168,7 +174,7 @@ body {
   animation-name: button;
 }
 .btn-white::after {
-  background-color: #fff;
+  background-color: $color-background;
 }
 
 .btn:hover::after {
