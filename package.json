@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio page",
-  "main": "Portfolio.html",
+  "main": "Portfolio/Portfolio.html",
   "scripts": {
     "compile:sass":"node-sass sass/main.scss Portfolio.css -w "
   },

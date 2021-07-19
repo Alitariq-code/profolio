@@ -40,3 +40,37 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-image: linear-gradient(to right, $color-light, $color-dark);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all.2s;
+  letter-spacing: 1rem;
+
+  &:hover {
+    transform: skewY(20deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: cursive;
+  color: $color-black;
+}
+
+.paragraph {
+  font-size: 3rem;
+  color: $color-black;
+  font-family: $font-for-para;
+  font-weight: lighter;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
